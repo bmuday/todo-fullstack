@@ -21,6 +21,6 @@ model Tasks {
   name    String?
   completedDateTime   DateTime?
   order   Int?
-  project   Projects  @relation(fields: [projectId], references: [id])
   projectId   Int
+  project   Projects  @relation(fields: [projectId], references: [id])
 }
